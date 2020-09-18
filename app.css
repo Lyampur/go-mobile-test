@@ -1,0 +1,24 @@
+/* убираем элементы и стили для элементов input,
+когда они неактивны, чтобы они выглядели, как
+обычные ячейки таблицы */
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button:disabled,
+input::-webkit-inner-spin-button:disabled {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number]:disabled {
+  -moz-appearance: textfield;
+}
+
+.form-control:disabled {
+  background-color: inherit;
+  border: 0;
+}
+
+#filter_input {
+  width: 80%;
+}
